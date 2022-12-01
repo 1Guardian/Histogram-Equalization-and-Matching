@@ -6,9 +6,9 @@ This project takes in either one image and applies histogram equalization, and t
 
 ## Usage:
 <pre>
-python sample.py -h -g -s sampling_method -d depth -i intensity -f imagefile
-        -s : sampling method. 1 for pixel deletion/replication, 2 for pixel averaging/interpolation [default: 1]
-        -d : Number of levels for downsampling [default: 1]
-        -i : Intensity levels, between 1 and 7 [default: 1]  
-        -f : Image input path
-        -g : grayscale the input image [default: false]
+histo.py -h -m -i imagefile -r referencefile
+        -m : 1 for histogram equalization, 2 for histogram matching via image, 3 for histogram matching via histogram file
+        -g : Include to set any input images to grayscale for histogram manipulation
+        -s : Take in image and save it's normalized histogram to a file
+        imagefile : image file that you want to work on
+        referencefile : reference image file for histogram matching, or a 256 line histogram file for matching
