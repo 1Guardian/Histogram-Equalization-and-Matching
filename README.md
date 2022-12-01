@@ -6,7 +6,7 @@ This project takes in either one image and applies histogram equalization, and t
 
 ## Usage:
 <pre>
-histo.py -h -m -i imagefile -r referencefile
+python histo.py -h -m -i imagefile -r referencefile
         -m : 1 for histogram equalization, 2 for histogram matching via image, 3 for histogram matching via histogram file
         -g : Include to set any input images to grayscale for histogram manipulation
         -s : Take in image and save it's normalized histogram to a file
